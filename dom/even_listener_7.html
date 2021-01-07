@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form class="classname">
+        <label for="">Name</label>
+        <input type="text" name="name" id="">
+        <br>
+        <label for="">Email</label>
+        <input type="text" name="email" id="">
+        <button type="submit">Submit</button>
+        <div class="btn"></div>
+    </form>
+
+    <script>  
+        var list = document.querySelector(".classnameC:\Users\Sharafat M.Khan\Desktop\dom\even_listener.html");
+        list.addEventListener('submit',(e)=>{
+        e.preventDefault();
+        let btn = document.querySelector(".btn");
+        btn.innerHTML += `
+        <br>
+        Name:- ${e.target.name.vallue}</br>
+        Email:-${e.target.email.value}
+        `
+        })
+        
+    </script>
+</body>
+</html>
